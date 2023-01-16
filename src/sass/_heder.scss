@@ -1,0 +1,53 @@
+
+.header-nav{
+    background-color: $lightHeaderAndFooterColor;
+    position: relative;
+  box-sizing: border-box;
+  margin-bottom: 0;
+
+
+  height: 100px;
+  }
+
+  .link-item{
+    font-family: 'Quicksand';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height */
+
+
+color: $darkPrimeryTextColor;
+
+
+
+  }
+
+  .link{
+    font-family: 'Quicksand';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height */
+
+
+color: $darkPrimeryTextColor;
+
+  }
+
+  .head-list{
+  display: flex;
+ 
+  }
+  .head-list li + li{
+    margin-left: 83px;
+  }
+
+  .list-item{
+margin-top: 37px;
+  }
+  .navigation{
+    margin-left: 535px;
+  }
