@@ -115,6 +115,7 @@ height: 36px;
   background-color: #7A7A7A;
   -webkit-transition: .3s;
   transition: .3s;
+  background-image: url(/src/images/symbol-defs.svg#icon-sun);
 }
 
 .slider:before {
@@ -150,5 +151,6 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
 
 
