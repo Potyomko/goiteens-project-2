@@ -1,0 +1,62 @@
+<div class="our-team">
+    <div class="container">
+        <h1 class="title">Our team</h1>
+
+        <ul class="cards">
+        </ul>
+    </div>
+</div>
+
+<script>
+    const people  = [
+        {
+            bg: 'grey',
+            name: 'Co-worker name',
+            phone: '+38 098 11 11 11',
+            email: 'example@gmail.com'
+        }
+    ]
+
+    const cards = document.querySelector('.cards');
+
+    function createCard({bg, name, phone, email}){
+        const cardEl =  document.createElement('li')
+        cardEl.classList.add('card')
+
+        const bgEl = document.createElement('div');
+        bgEl.classList.add('bgEl');
+        bgEl.style.backgroundColor = bg;
+
+        const nameEl = document.createElement('h3')
+        nameEl.classList.add('name');
+        nameEl.textContent = name;
+
+        const phoneEl = document.createElement('p');
+        phoneEl.classList.add('phone');
+        phoneEl.textContent = phone;
+
+        const emailEl = document.createElement('p');
+        emailEl.classList.add('email');
+        emailEl.textContent = email;
+
+        cardEl.append(bgEl, nameEl, phoneEl, emailEl);
+        cards.append(cardEl);
+    }
+
+    people.map(createCard);
+    people.map(createCard);
+    people.map(createCard);
+    people.map(createCard);
+    people.map(createCard);
+    people.map(createCard);
+    people.map(createCard);
+    people.map(createCard);
+    people.map(createCard);
+    people.map(createCard);
+    people.map(createCard);
+    people.map(createCard);
+    people.map(createCard);
+    people.map(createCard);
+    people.map(createCard);
+    people.map(createCard);
+</script>
