@@ -1,4 +1,85 @@
 <section class="hero-section">
+
+    <!-- Online -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="online">
+        <!-- Form online -->
+        <form class="form js-speaker-form" autocomplete="on">
+            <div class="book-online">
+                <a href="" class="text-book-online">Book a test-drive online</a>
+                <svg class="arrow-book-online" width="12" height="6">
+                    <use href="./images/symbol-defs.svg#icon-arrow-to-right" ></use>
+                </svg>
+            </div>
+            <ul class="fields">
+                <li class="field name">
+                    <label class="label-text" for="name-surname">Name, Surname</label>
+                        <input 
+                            class="form-field"
+                            type="text"
+                            name="name-surname"
+                            id="name-surname" 
+                            placeholder="Enter your name">
+                </li>
+                <li class="field phone-number">
+                    <label class="label-text phone-number" for="phone-number">Phone Number</label>
+                        <input 
+                            class="form-field"
+                            type="phone-number"
+                            name="phone-number"
+                            id="phone-number"
+                            placeholder="Enter your phone number" >
+            </ul>
+                <button type="submit" class="online-btn">Submit</button> <!--Слухач подій -->
+            <div class="close">
+                
+                <p class="close-text" data-modal-close>Close current window</p>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- without call -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="without-call">
+        <!-- Form without call -->
+        <form class="form js-speaker-form" autocomplete="on">
+            <div class="book-without-call">
+                <a href="" class="text-book-without-call">Book a test-drive without a call</a>
+                <!-- <svg class="arrow-book-online" width="12" height="6">
+                    <use href="./images/arrow-book-online.svg" ></use>
+                </svg>    -->
+            </div>
+            <ul class="fields">
+                <li class="field name">
+                    <label class="label-text" for="name-surname">Name, Surname</label>
+                        <input 
+                            class="form-field"
+                            type="text"
+                            name="name-surname"
+                            id="name-surname" 
+                            placeholder="Enter your name">
+                </li>
+                <li class="field E-mail">
+                    <label class="label-text E-mail" for="E-mail">E-Mail</label>
+                        <input 
+                            class="form-field"
+                            type="E-mail"
+                            name="E-mail"
+                            id="E-Mail"
+                            placeholder="Enter your E-Mail" >
+            </ul>
+                <button type="submit" class="without-call-btn">Submit</button>
+            <div class="close-without-call">
+                
+                <p class="close-text-without-call" data-modal-close>Close current window</p>
+            </div>
+        </form>
+    </div>
+</div>
+
+
     <div class="inform">
         <svg class="last-photo" width="70" height="70" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M52.4975 2.99996L3.00005 52.4974L52.4975 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <svg class="next-photo" width="70" height="70" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.49747 2.99996L52.9949 52.4974L3.49747 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
