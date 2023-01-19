@@ -1,12 +1,17 @@
 .header-nav{
     background-color: $lightHeaderAndFooterColor;
     position: relative;
-  box-sizing: border-box;
-  margin-bottom: 0;
 
-  height: 100px;
+
+ padding-bottom: 26px;
+ padding-top: 26px;
+
+
   }
-
+.header-container{
+  display: flex;
+  align-items: center;
+}
   .link-item{
     font-family: 'Quicksand';
 font-style: normal;
@@ -40,11 +45,8 @@ color: $darkPrimeryTextColor;
     margin-left: 83px;
   }
 
-  .list-item{
-margin-top: 37px;
-  }
-  .navigation{
-    margin-left: 535px;
+  
+  .navigation{    margin-left: 273px;
   }
 
 
@@ -81,8 +83,9 @@ height: 36px;
 .list-button{
   width: 1200px;
   display: flex;
-  margin-left: 1078px;
-   margin-top: -32px;
+  margin-left: 36px;
+
+
   
 }
 
@@ -90,8 +93,8 @@ height: 36px;
   margin-left: 30px;
 }
 .item-slider{
-  margin-left: 1000px;
-   margin-top: -20px;
+  margin-left: 98px;
+
 }
 .switch {
   position: relative;
