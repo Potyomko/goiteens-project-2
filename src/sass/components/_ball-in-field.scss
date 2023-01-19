@@ -1,0 +1,17 @@
+.field {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: url(/img/field.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.ball {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 1s all;
+    width: 50px;
+}
