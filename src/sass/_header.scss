@@ -3,8 +3,8 @@
     position: relative;
 
 
-//  padding-bottom: 26px;
-//  padding-top: 26px;
+ padding-bottom: 26px;
+ padding-top: 26px;
 
 
   }
@@ -137,9 +137,6 @@ height: 36px;
   background-color: white;
   -webkit-transition: .3s;
   transition: .3s;
-  background-image: url(/src/images/header-icon/Ellipse\ 8\ \(2\)\ \(1\).svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 input:checked + .slider {
@@ -156,10 +153,6 @@ input:checked + .slider:before  {
   -ms-transform: translateX(19px);
   transform: translateX(19px);
   background-color: #000000;
-  background-image: url(/src/images/header-icon/Ellipse\ 7\ \(2\).svg);
-  background-repeat: no-repeat;
-  background-position: center;
-
 
 }
 
@@ -170,12 +163,6 @@ input:checked + .slider:before  {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-.logo{
-  width: inherit;
-
-
 }
 
 

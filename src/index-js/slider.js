@@ -1,0 +1,1 @@
+const sliderEl = document.querySelector(".slider")
