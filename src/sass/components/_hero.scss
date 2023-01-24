@@ -106,6 +106,7 @@ margin-top: 400px;
     background-color: #ffffff;
     background-size: cover;
     border-radius: 12px;
+    position: absolute;
     
    transform: translate(-50%, -50%) scale(1);
    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);

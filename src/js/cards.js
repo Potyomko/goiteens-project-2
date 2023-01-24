@@ -93,7 +93,7 @@ const createCards = function(games) {
 
   const elements = games.map(createCards)
 
-  const containerEl = document.querySelector('.interactive-cargs')
+  const containerEl = document.querySelector('.interactive-cards')
 
   containerEl.append(...elements);
 
