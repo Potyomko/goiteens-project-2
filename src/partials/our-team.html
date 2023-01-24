@@ -13,13 +13,31 @@
             bg: 'grey',
             name: 'Co-worker name',
             phone: '+38 098 11 11 11',
-            email: 'example@gmail.com'
+            email: 'example@gmail.com',
+            tasks: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus nemo, sed magnam corporis, error dolor labore ab ad a recusandae incidunt nihil numquam, quam inventore molestias nisi odio quas nam fuga ducimus ut sunt! Saepe ipsum eius doloribus voluptatum praesentium maiores nobis animi molestiae cum reprehenderit quam, tenetur tempore.'
         }
     ]
 
+    const front = document.querySelector('.front');
     const cards = document.querySelector('.cards');
+    const container = document.querySelector('.container');
+    const cardContainer = document.querySelector('.cardContainer');
 
-    function createCard({bg, name, phone, email}){
+    function createCard({bg, name, phone, email, tasks}){
+
+        const cardContainerMainEl = document.createElement('div');
+        cardContainerMainEl.classList.add('cardContainerMain');
+
+        const cardContainerEl = document.createElement('div');
+        cardContainerEl.classList.add('cardContainer');
+
+        const taskEl = document.createElement('div');
+        taskEl.classList.add('taskContainer');
+        taskEl.textContent = tasks;
+
+        const frontEl = document.createElement('div')
+        frontEl.classList.add('front');
+
         const cardEl =  document.createElement('li')
         cardEl.classList.add('card')
 
@@ -39,8 +57,16 @@
         emailEl.classList.add('email');
         emailEl.textContent = email;
 
+        
         cardEl.append(bgEl, nameEl, phoneEl, emailEl);
-        cards.append(cardEl);
+
+        frontEl.append(cardEl);
+
+        cardContainerEl.append(frontEl, taskEl);
+
+        cardContainerMainEl.append(cardContainerEl);
+
+        cards.append(cardContainerMainEl);
     }
 
     people.map(createCard);

@@ -13,8 +13,9 @@
     margin-bottom: 36px;
 }
 
-.card{
+.card, .taskContainer{
     width: 240px;
+    height: 354px;
     box-shadow: 9px 8px 34px 0px #00000040;
     border-radius: 12px;
     padding-bottom: 20px;
@@ -64,4 +65,44 @@
     font-size: 13px;
     line-height: 16px;
     color: #000000;
+}
+
+
+.front{
+    transform: rotateY(0);
+    z-index: 2;
+}
+
+.taskContainer{
+    transform: rotateY(180deg);
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.cardContainer{
+    position: relative;
+    width: 240px;
+    height: 354px;
+    transform-style: preserve-3d;
+    transition: .250s;
+}
+
+.front, .taskContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.cardContainerMain:hover .cardContainer{
+    transform: rotateY(180deg);
+    cursor: pointer;
 }
