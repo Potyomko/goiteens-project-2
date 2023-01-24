@@ -1,0 +1,17 @@
+.interactive-cargs {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.cards-list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+} 
+
+.cards-button {
+    width: 240px;
+    height: 354px;
+}
