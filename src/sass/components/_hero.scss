@@ -113,11 +113,13 @@ margin-top: 400px;
 .text-book-online{
     display: inline-block;
     margin: 0;
-    font-family: Quicksand;
-    font-style: Regular;
+    font-family: 'Quicksand';
+    font-style: normal;
     font-size: 16px;
     line-height: 20px;
     line-height: 100%;
+    color: #ffffff;
+    padding-right: 10px;
 
     // &::before{
     //     content: "";
@@ -128,6 +130,19 @@ margin-top: 400px;
     //     margin-left: 66px;
     //     transform: translate(-50%, -50%);
     // }
+}
+.fields{
+    padding: 20px;
+}
+.field{
+    color: #000000;
+    margin-bottom: 14px;
+    margin-left: 20px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }
 .book-online{
     display: flex;
@@ -144,10 +159,11 @@ margin-top: 400px;
     border-radius: 12px 12px 0px 0px;
 }
 .label-text{
-    font-family: Quicksand;
-    font-style: Regular;
+    display: inline-block;
+    font-family: 'Quicksand';
     font-size: 12px;
     line-height: 15px;
+    margin-bottom: 10px;
 }
 .form-field{
     width: 201px;
@@ -167,7 +183,7 @@ margin-top: 400px;
     width: 81px;
     height: 25px;
 
-    background: #000000;
+    color: #000000;
     border-radius: 12px;
 }
 .arrow-close-online{
@@ -206,6 +222,8 @@ margin-top: 400px;
 
 
 // Приклад
+
+
 // .modal-button{
 //     position: relative;
 //     top: 29px;
