@@ -1,0 +1,40 @@
+<!-- Online -->
+<div class="backdrop-modal is-hidden" data-modal>
+    <div class="online">
+        <!-- Form online -->
+        <form class="form js-speaker-form" autocomplete="on">
+            <div class="book-online">
+                <a href="" class="text-book-online">Book a test-drive online</a>
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 13L7 7L1 1" stroke="white"/>
+                </svg>
+            </div>
+            <ul class="fields">
+                <li class="field name">
+                    <label class="label-text" for="name-surname">Name, Surname</label>
+                        <input 
+                            class="form-field"
+                            type="text"
+                            name="name-surname"
+                            id="name-surname" 
+                            placeholder="Enter your name">
+                </li>
+                <li class="field phone-number">
+                    <label class="label-text phone-number" for="phone-number">Phone Number</label>
+                        <input 
+                            class="form-field"
+                            type="phone-number"
+                            name="phone-number"
+                            id="phone-number"
+                            placeholder="Enter your phone number" >
+            </ul>
+                <button type="submit" class="online-btn">Submit</button> <!--Слухач подій -->
+                <button data-modal-close>
+                <svg class="arrow-close-online" width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.12126 4.94975L0.999942 2.82843M0.999942 2.82843L3.12126 0.707113M0.999942 2.82843H6.6568" stroke="black" stroke-width="0.5"/>
+                </svg>
+                <p class="close-text">Close current window</p>
+                </button>
+        </form>
+    </div>
+</div>
