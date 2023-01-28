@@ -1,27 +1,18 @@
-<section class="hero-section">
-    <div class="inform">
-        <svg class="last-photo" width="70" height="70" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M52.4975 2.99996L3.00005 52.4974L52.4975 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <svg class="next-photo" width="70" height="70" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.49747 2.99996L52.9949 52.4974L3.49747 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <h1>Honda Civic</h1>
-        <p>Honda Civic has advantages for interior space, 
-            driving dynamics, an upscale cabin, and 
-            more safety features.</p>
-    </div>
-    <button type="button">Book a test-drive</button>
-   </section>  
-  <div class="infrom">
-    <h1>Honda Civic</h1>
-    <p>Honda Civic has advantages for interior space, 
-      driving dynamics, an upscale cabin, and 
-      more safety features.</p>
+<section class="hero-section section">
+  <div class="inform">
+    <h1 class="description-car">Honda Civic</h1>
+    <p class="description">Honda Civic has advantages for interior space, driving dynamics, an upscale cabin, and more safety features.</p>
   </div>
-  <button class="next-photo" type="button">
-    <svg width="56" height="105" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.49747 2.99996L52.9949 52.4974L3.49747 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </button>
-  <button class="last-photo" type="button">
+  <button class="last-photo">
     <svg width="56" height="105" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M52.4975 2.99996L3.00005 52.4974L52.4975 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </button>
+  <button class="next-photo">
+    <svg width="56" height="105" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.49747 2.99996L52.9949 52.4974L3.49747 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button type="button">Book a test-drive</button>
 </section>
+  
+
 
   <script>
     const images = [
@@ -40,11 +31,11 @@
     ];
     const btnRight = document.querySelector(".next-photo");
 
-    const btnLeft = document.querySelector("last-photo");
+    const btnLeft = document.querySelector(".last-photo");
 
     const imageEl = document.createElement('img');
 
-    img.classlist.add('image');
+    imageEl.classlist.add('image');
 
     imageEl.src = images[0].url;
 

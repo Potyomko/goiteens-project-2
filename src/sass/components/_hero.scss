@@ -3,69 +3,55 @@
     height: 800px;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.17);
-    margin-top: 36px;
     position: relative;
 }
 
-h1{
+.inform{
+    padding: 76px 150px;
+}
+
+.description-car{
 font-family: 'Quicksand';
 font-style: normal;
 font-weight: 500;
 font-size: 32px;
 line-height: 40px;
-color: #000000;
 margin-bottom: 15px;
+color: #000000;
 }
 
-p{
+.description{
+width: 360px;
 font-family: 'Quicksand';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 20px;
+
 color: #000000;
-width: 356px; 
 }
-
-.inform{
-    padding: 80px 150px;
-}
-
-.hero-section button{
-display: block;
-font-family: 'Quicksand';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 30px;
-color: #000000;
-background-color: #FFFFFF;
-border-radius: 12px;
-border: none;
-
-padding: 15px 30px;
-margin-left: 1035px;
-margin-top: 400px;
- }
 
 .last-photo{
-    display: block;
-    width: 70px;
-    height: 70px;
     position: absolute;
-    top: 40%;
-    left: 0;
+    top: 42%;
+    left: 15px;
+    background: none;
+    border: none;
 }
 
 .next-photo{
-    display: block;
-    width: 70px;
-    height: 70px;
-
     position: absolute;
-    top: 40%;
-    right: 0;
+    top: 42%;
+    right: 15px;
+    background: none;
+    border: none;
 }
+
+.image{
+    width: 100%;
+}
+
+
 
 
 
