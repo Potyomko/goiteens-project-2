@@ -1,3 +1,5 @@
+import './js/header-modal-online';
+import './js/header-modal-offline';
 import './js/cards';
 import './js/ball-in-field';
 import './js/calculate-hour-or-minutes';
