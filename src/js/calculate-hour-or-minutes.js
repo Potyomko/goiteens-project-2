@@ -1,9 +1,10 @@
-const labelEl = createElement('label');
+// const labelEl = createElement('label');
 
-const inputEl = createElement('input');
-inputEl.type = 'text';
+// const inputEl = createElement('input');
+// inputEL.classList.add('js-calculate');
+// inputEl.type = 'text';
 
-labelEl.appendChild(inputEl)
+// labelEl.appendChild(inputEl)
 
 const input = document.querySelector('.js-calculate');
         console.log(input);
@@ -18,4 +19,5 @@ function createTextInput(result) {
     const textEl = document.createElement('p');
     textEl.classList.add('text-result');
     textEl.textContent = result;
-            }
+}
+            
