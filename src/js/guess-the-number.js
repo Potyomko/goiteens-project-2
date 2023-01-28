@@ -7,9 +7,9 @@ const answer = document.createElement('p');
 
 let number = 0;
 
-review.classList.add('guess.the.number.btn')
+review.classList.add('guess-the-number-btn')
 
-action.textContent = 'Спробуйте вгадати загадане число ^-^';
+act.textContent = 'Спробуйте вгадати загадане число ^-^';
 
 countainerRef.append(act)
 countainerRef.append(input);
@@ -20,7 +20,7 @@ review.addEventListener('click',reviewNumber)
 input.addEventListener('input',inputEvent)
 
 function inputEvent (event) {
-    return number  = Number(event.currentTarget)
+    return number  = Number(event.currentTarget.value)
 }
 
 function reviewNumber() {
