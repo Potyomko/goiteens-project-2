@@ -4,10 +4,13 @@
    
     background-color: rgba(0, 0, 0, 0.17);
     position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .inform{
     padding: 76px 150px;
+    position: absolute;
 }
 
 .description-car{
@@ -33,22 +36,45 @@ color: #000000;
 
 .last-photo{
     position: absolute;
-    top: 42%;
-    left: 15px;
+    top: 40%;
+    left: 5px;
     background: none;
     border: none;
 }
 
 .next-photo{
     position: absolute;
-    top: 42%;
-    right: 15px;
+    top: 40%;
+    right: 5px;
     background: none;
     border: none;
 }
 
 .image{
-    width: 100%;
+    width: 1440px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.test-drive{
+    position: absolute;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    padding: 15px 30px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border: none;
+    
+    left: 74%;
+    top: 76%;
 }
 
 
@@ -290,6 +316,4 @@ color: #000000;
 //     text-decoration: underline;
 //     margin-left: 3px;
 // }
-//     top: 40%;
-//     right: 0;
-// }
+
