@@ -1,4 +1,4 @@
-const modalRef = document.querySelector('[data-modal="10"]')
+const modalRef = document.querySelector('[data-modal="10"]');
 
 const countainerEl = document.createElement('div');
 const fieldEl = document.createElement('div');
