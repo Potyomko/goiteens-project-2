@@ -1,101 +1,101 @@
 
  const games =  [
-    {
-      id: 1,
-      name: 'Високосний калькулятор',
-      category: 'calculator',
-    },
-    {
-      id: 2,
-      name: 'Високосний калькулятор',
-      category: 'calculator',
-    },
-    {
-      id: 3,
-      name: 'Високосний калькулятор',
-      category: 'calculator',
-    },
-    {
-      id: 4,
-      name: 'Високосний калькулятор',
-      category: 'calculator',
-    },
-    {
-      id: 5,
-      name: 'Високосний калькулятор',
-      category: 'calculator',
-    },
-    {
-      id: 6,
-      name: 'Високосний калькулятор',
-      category: 'calculator',
-    },
-    {
-      id: 7,
-      name: 'Високосний калькулятор',
-      category: 'calculator',
-    },
-    {
-      id: 8,
-      name: 'Високосний калькулятор',
-      category: 'calculator',
-    },
-    {
-      id: 9,
-      name: 'Високосний калькулятор',
-      category: 'calculator',
-    },
-    {
-      id: 10,
-      name: 'Високосний калькулятор',
-      category: 'calculator',
-    },
-    {
-      id: 11,
-      name: 'Високосний калькулятор',
-      category: 'calculator',
-    },
-    {
-      id: 12,
-      name: 'Високосний калькулятор',
-      category: 'calculator',
-    },
+  {
+    id: 1,
+    name: 'Високосний калькулятор',
+    category: 'calculator',
+  },
+  {
+    id: 2,
+    name: 'Високосний калькулятор',
+    category: 'calculator',
+  },
+  {
+    id: 3,
+    name: 'Високосний калькулятор',
+    category: 'calculator',
+  },
+  {
+    id: 4,
+    name: 'Високосний калькулятор',
+    category: 'calculator',
+  },
+  {
+    id: 5,
+    name: 'Високосний калькулятор',
+    category: 'calculator',
+  },
+  {
+    id: 6,
+    name: 'Високосний калькулятор',
+    category: 'calculator',
+  },
+  {
+    id: 7,
+    name: 'Високосний калькулятор',
+    category: 'calculator',
+  },
+  {
+    id: 8,
+    name: 'Високосний калькулятор',
+    category: 'calculator',
+  },
+  {
+    id: 9,
+    name: 'Високосний калькулятор',
+    category: 'calculator',
+  },
+  {
+    id: 10,
+    name: 'Високосний калькулятор',
+    category: 'calculator',
+  },
+  {
+    id: 11,
+    name: 'Високосний калькулятор',
+    category: 'calculator',
+  },
+  {
+    id: 12,
+    name: 'Високосний калькулятор',
+    category: 'calculator',
+  },
 ]
+
+console.log(games.name);
 
 
 const createCards = function(games) {
-    const cardEl = document.createElement('li');
-    cardEl.classList = 'cards-list';
 
-    const button = document.createElement('button');
-    button.classList = 'cards-button';
-    button.textContent = games.name;
+  const cardEl = document.createElement('li');
+  cardEl.classList = 'cards-list';
 
-    cardEl.appendChild(button);
+  const button = document.createElement('button');
+  button.classList = 'cards-button';
+  button.textContent = games.name;
 
-      return cardEl;
+  const backdropEl = document.createElement('div')
+  backdropEl.classList = 'backdrop hidden game';
+
+  const modalEl = document.createElement('div')
+  modalEl.classList = 'modal game';
+  modalEl.id = games.id
+
+
+  backdropEl.append(modalEl)
+
+  cardEl.append(button, backdropEl);
+
+    return cardEl;
+
 }
 
-  const elements = games.map(createCards)
+// console.log(createArticle(products[0]));
 
-  const containerEl = document.querySelector('.interactive-cards')
+const elements = games.map(createCards)
 
-  containerEl.append(...elements);
+const containerEl = document.querySelector('.interactive-cargs')
 
-  // console.log(containerEl);
+containerEl.append(...elements);
 
-  // Відкриття модалки
-   const backdropEl = document.querySelector('.backdrop')
-console.log(backdropEl);
-
-  containerEl.addEventListener('click', onModalOpen);
-
-  function onModalOpen(e) {
-    console.log(e.target);
-      if(e.target.nodeName !== "BUTTON"){
-        return;
-      }
-      console.log(backdropEl);
-      backdropEl.classList.remove('is-hidden')
-    
-  }
+console.log(containerEl);

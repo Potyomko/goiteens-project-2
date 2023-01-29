@@ -1,29 +1,4 @@
-.interactive-section{
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.interactive-cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-}
-
-.cards-list {
-    flex-basis: calc((100% - 15px * 8) / 4);
-    margin: 15px;
-} 
-
-.cards-button {
-    width: 100%;
-    display: inline-flex;
-    height: 350px;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-.backdrop{
+ .backdrop{
     position: fixed;
     top: 0;
     left: 0;
@@ -32,26 +7,39 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    z-index: 5;
-    
-    &.is-hidden{
+    &.hidden{
         opacity: 0;
         pointer-events: none;
     }
 }
 
-.game-modal{
+.game{
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 800px;
-    height: 600px;
     background-color: #ffffffff;
-    padding: 23px 65px;
+    // background-image: url(./images/background-image.png);
+    background-size: cover;
+    padding: 0px 65px 23px 65px;
     border-radius: 20px;
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.interactive-cargs {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.cards-button {
+    width: 240px;
+    height: 354px;
+}
