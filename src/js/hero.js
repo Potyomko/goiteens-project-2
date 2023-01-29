@@ -12,8 +12,7 @@ const images = [
       description: 'Honda Civic',
     }
 ];
-
-const btnRight = document.querySelector(".next-photo");
+    const btnRight = document.querySelector(".next-photo");
     const btnLeft = document.querySelector(".last-photo");
     const section = document.querySelector('.hero-section')
 
