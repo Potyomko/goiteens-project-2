@@ -1,3 +1,25 @@
+const appEl = document.createElement('div');
+appEl.classList.add('app');
+const arr = [
+  { item: 0 },
+  { item: 1 },
+  { item: 2 },
+  { item: 3 },
+  { item: 4 },
+  { item: 5 },
+  { item: 6 },
+  { item: 7 },
+  { item: 8 },
+];
+
+const itemEl = arr.map(el => {
+  const itemEl = document.createElement('div');
+  itemEl.classList.add('app_block');
+  itemEl.dataset.el.item;
+});
+
+appEl.appendChild(itemEl);
+
 const items = document.getElementsByClassName('app_block');
 let movePlayer = true;
 let game = true;
