@@ -11,14 +11,15 @@
 .cards-list {
     flex-basis: calc((100% - 15px * 8) / 4);
     margin: 15px;
-    // display: flex;
-    // align-items: stretch;
-    // justify-content: space-between;
 } 
 
 .cards-button {
-    width: 240px;
-    height: 354px;
+    width: 100%;
+    display: inline-flex;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
@@ -31,27 +32,26 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    &.hidden{
+
+    z-index: 5;
+    
+    &.is-hidden{
         opacity: 0;
         pointer-events: none;
     }
 }
 
-.game{
+.game-modal{
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 800px;
+    height: 600px;
     background-color: #ffffffff;
-    // background-image: url(../images/background-image.png);
-    background-size: cover;
-    padding: 0px 65px 23px 65px;
+    padding: 23px 65px;
     border-radius: 20px;
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cards-button {
-    width: 240px;
-    height: 354px;
-}
