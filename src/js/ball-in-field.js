@@ -1,16 +1,19 @@
-const countainerRef = document.querySelector('.countainer');
+const modalRef = document.querySelector('[data-modal="10"]')
 
+const countainerEl = document.createElement('div');
 const fieldEl = document.createElement('div');
 const ballEl = document.createElement('img');
 
 fieldEl.classList.add('field');
 ballEl.classList.add('ball');
+countainerEl.id = '10'
 
-ballEl.src = './img/ball.png'
+ballEl.src = '///src/images/ball.png'
 ballEl.alt = 'Ball'
 
 fieldEl.appendChild(ballEl);
-countainerRef.append(fieldEl)
+countainerEl.append(fieldEl);
+modalRef.append(countainerEl);
 
 fieldEl.addEventListener('click', hendlerBollMove)
 
