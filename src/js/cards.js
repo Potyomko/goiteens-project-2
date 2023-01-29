@@ -1,5 +1,4 @@
-
- const games =  [
+const games =  [
   {
     id: 1,
     name: 'Високосний калькулятор',
@@ -66,36 +65,40 @@ console.log(games.name);
 
 
 const createCards = function(games) {
-
   const cardEl = document.createElement('li');
   cardEl.classList = 'cards-list';
 
   const button = document.createElement('button');
   button.classList = 'cards-button';
   button.textContent = games.name;
+  button.id = games.id;
 
-  const backdropEl = document.createElement('div')
-  backdropEl.classList = 'backdrop hidden game';
-
-  const modalEl = document.createElement('div')
-  modalEl.classList = 'modal game';
-  modalEl.id = games.id
-
-
-  backdropEl.append(modalEl)
-
-  cardEl.append(button, backdropEl);
+  cardEl.appendChild(button);
 
     return cardEl;
-
 }
-
-// console.log(createArticle(products[0]));
 
 const elements = games.map(createCards)
 
-const containerEl = document.querySelector('.interactive-cargs')
+const containerEl = document.querySelector('.interactive-cards')
 
 containerEl.append(...elements);
 
-console.log(containerEl);
+// console.log(containerEl);
+
+// Відкриття модалки
+ const backdropEl = document.querySelector('.backdrop')
+ const modalEl = document.querySelector('.game-modal')
+
+
+containerEl.addEventListener('click', onModalOpen);
+
+function onModalOpen(e) {
+    if(e.target.nodeName !== "BUTTON"){
+      return;
+    }
+
+    modalEl.setAttribute('data-modal', e.target.id)
+    backdropEl.classList.remove('is-hidden')     
+  
+}

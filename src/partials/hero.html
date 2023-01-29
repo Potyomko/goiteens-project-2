@@ -5,73 +5,13 @@
       <p class="description">Honda Civic has advantages for interior space, driving dynamics, an upscale cabin, and more safety features.</p>
     </div>
     <button class="last-photo">
-      <svg width="56" height="105" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M52.4975 2.99996L3.00005 52.4974L52.4975 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </button>
-    <button class="next-photo">
-      <svg width="56" height="105" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.49747 2.99996L52.9949 52.4974L3.49747 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </button>
-    <button type="button">Book a test-drive</button>
+    <svg width="70" height="70" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M52.4975 2.99996L3.00005 52.4974L52.4975 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="next-photo">
+    <svg width="70" height="70" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.49747 2.99996L52.9949 52.4974L3.49747 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="test-drive" type="button">Book a test-drive</button>
   </div>
 </section>
-  
-
-
-  <!-- <script>
-    const images = [
-      {
-        url: "https://cdn.motor1.com/images/mgl/RzE0m/s1/2020-honda-civic-hatchback-facelift.jpg",
-        description: 'Honda Civic',
-      },
-      {
-        url: "https://s.auto.drom.ru/i24262/c/photos/fullsize/honda/civic/honda_civic_1034323.jpg",
-        description: 'Honda Civic',
-      },
-      {
-        url: "https://cdn.motor1.com/images/mgl/AkBE9P/s1/new-honda-civic-e-hev-hybrid-europe.jpg",
-        description: 'Honda Civic',
-      }
-    ];
-    const btnRight = document.querySelector(".next-photo");
-
-    const btnLeft = document.querySelector(".last-photo");
-
-    const imageEl = document.createElement('img');
-
-    imageEl.classlist.add('image');
-
-    imageEl.src = images[0].url;
-
-    document.hero-section.prepend(imageEl);
-    // 
-
-    btnRight.addEventListener('click', nextClick);
-
-    function nextClick(e) {
-      for (let i = 0; i < array.length; i+=1) {
-        const elem = images[i];
-        if (images[0].url === imagEl.src) {
-          if (i === images.length - 1) {
-            btnRight.disabled = true;
-          }
-          return images.src = images[i + 1].url;
-        }
-      }
-    };
-    // 
-
-    btnLeft.addEventListener('click', lastClick);
-
-    function lastClick(e) {
-      for (let i = 0; i < array.length; i+=1) {
-        const elem = images[i];
-        if (images[0].url === imagEl.src) {
-          if (i === images.length - 1) {
-            btnLeft.disabled = true;
-          }
-          return images.src = images[i - 1].url;
-        }
-      }
-    };
-  </script>
-
- -->
+<script src="./js/hero.js" type="module"></script>
+ 
