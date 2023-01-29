@@ -77,7 +77,8 @@ const createCards = function(games) {
     backdropEl.classList = 'backdrop hidden game';
 
     const modalEl = document.createElement('div')
-    backdropEl.classList = 'modal game';
+    modalEl.classList = 'modal game';
+    modalEl.id = games.id
 
 
     backdropEl.append(modalEl)

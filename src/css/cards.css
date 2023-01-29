@@ -1,17 +1,22 @@
 .interactive-cargs {
     display: flex;
-    /* flex-direction: row; */
     align-items: stretch;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cards-list {
     display: flex;
-    align-items: stretch;
-    justify-content: space-between;
 } 
 
 .cards-button {
     width: 240px;
     height: 354px;
+    border-radius: 12px;
+    margin: 20px;
+    background-color: #C4C4C4;
+    border: 0px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: calc(justify-content);
 }
