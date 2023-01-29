@@ -1,16 +1,30 @@
-const listEl = document.querySelector('.ul')
+
+const modalContainer= document.querySelector('#7')
 // створюємо li з картинками
 
-listEl.insertAdjacentHTML('afterbegin', '<li class="item "><img class="img"src="https://www.pngall.com/wp-content/uploads/5/Stone-PNG-Photo.png" alt="камінь" width="50" height="50"></li>')
-listEl.insertAdjacentHTML('beforeend', '<li class="item "  ><img class="img"src="https://www.pngplay.com/wp-content/uploads/12/Scissor-PNG-HD-Quality.png" alt="ножниці" width="50" height="50"></li>')
-listEl.insertAdjacentHTML('beforeend', '  <li class="item"  ><img class="img"src="https://www.pngall.com/wp-content/uploads/10/Paper-PNG-Photo.png" width="50" height="50" alt="папір"></li>')
+modalContainer.innerHTML(`<section>
+<h1 class="title">Камінь ножниці папір!</h1>
 
-const itemQuestionEl = document.querySelector('.li')
-const TextEl = document.querySelector('.h1')
+<p class="text">комп'ютер - <span class="comp"> 0</span></p>
+<p class="text-1">Ти - <span class="user"> 0</span></p>
+
+ <ul class="list" >
+  <li class="item "><img class="img"src="https://www.pngall.com/wp-content/uploads/5/Stone-PNG-Photo.png" alt="камінь" width="50" height="50"></li>
+  <li class="item "><img class="img"src="https://www.pngplay.com/wp-content/uploads/12/Scissor-PNG-HD-Quality.png" alt="ножниці" width="50" height="50"></li>
+  <li class="item"><img class="img"src="https://www.pngall.com/wp-content/uploads/10/Paper-PNG-Photo.png" width="50" height="50" alt="папір"></li>
+</ul>
+<ul>
+<img class="image item" src="https://cdn-icons-png.flaticon.com/512/25/25333.png" alt="2" width="50" height="50">
+</ul>
+
+</section>`)
+const itemQuestionEl = document.querySelector('.image')
+const TextEl = document.querySelector('.title"')
 const comp = document.querySelector('.comp')
 const users = document.querySelector('.user')
+const listEl = document.querySelector('.list')
 
-
+stone-scissors-paper
 // Отримуємо масив всіх картинок
 const imagesList = document.querySelectorAll('.img')
 console.log(imagesList );
@@ -92,7 +106,7 @@ switch (combination) {
 
 // Виносимо окремі шматки коду в функції для чистоти коду
 function changeStyles(message, winner, loser, ) {
-  TextEl .textContent = message;   
+  TextEl.textContent = message;   
   loser.classList.add('color-lose');
   winner.classList.add('color-win');
   
