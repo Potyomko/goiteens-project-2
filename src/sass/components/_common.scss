@@ -1,10 +1,10 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 .container {
     width: 1170px;
-
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: auto;
+    padding-right: auto;
 }
 .section {
     padding-top: 36px;
