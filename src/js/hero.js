@@ -4,16 +4,15 @@ const images = [
       description: 'Honda Civic',
     },
     {
-      url: "https://motor.ru/thumb/1500x0/filters:quality(75):no_upscale()/imgs/2021/11/16/07/5029149/d3bfd675b3dbe31ecd845472ccf0a733569445ff.jpg",
+      url: "https://motor.ru/imgs/2021/11/16/07/5029149/c6a078b3c3448720cda902894d0841eb23848849.jpg",
       description: 'Honda Civic',
     },
     {
-      url: "https://focus.ua/static/storage/thumbs/920x465/0/d3/d9a48f20-530bad3574a9306ac46354a43014bd30.jpg?v=5329_1",
+      url: "https://ap.ge/system/car/photos/006/586/848/medium.jpg?1673085170",
       description: 'Honda Civic',
     }
-  ];
-
-  const btnRight = document.querySelector(".next-photo");
+];
+    const btnRight = document.querySelector(".next-photo");
     const btnLeft = document.querySelector(".last-photo");
     const section = document.querySelector('.hero-section')
 

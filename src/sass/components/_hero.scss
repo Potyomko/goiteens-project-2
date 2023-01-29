@@ -1,15 +1,13 @@
 .hero-section{
-    // width: 1440px;
     height: 800px;
-   
     background-color: rgba(0, 0, 0, 0.17);
     position: relative;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 16px;
 }
 
 .inform{
-    padding: 76px 150px;
+    top: 76px;
+    left: 200px;
     position: absolute;
 }
 
@@ -36,7 +34,7 @@ color: #000000;
 
 .last-photo{
     position: absolute;
-    top: 40%;
+    top: 42%;
     left: 5px;
     background: none;
     border: none;
@@ -44,24 +42,20 @@ color: #000000;
 
 .next-photo{
     position: absolute;
-    top: 40%;
+    top: 42%;
     right: 5px;
     background: none;
     border: none;
 }
 
 .image{
-    width: 1440px;
-    height: 800px;
     position: absolute;
+    width: 100%;
+    height: 800;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
 }
 
 .test-drive{
-    position: absolute;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 500;
@@ -69,12 +63,13 @@ color: #000000;
     line-height: 30px;
     color: #000000;
     padding: 15px 30px;
-    background-color: #FFFFFF;
+    background-color: #fff;
     border-radius: 12px;
     border: none;
-    
-    left: 74%;
+
+    position: absolute;
     top: 76%;
+    left: 75%;
 }
 
 
