@@ -3,67 +3,293 @@
     height: 800px;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.17);
-    background-image: url(../images/Rectangle\ 5.png);
-    margin-top: 36px;
     position: relative;
 }
 
-h1{
+.inform{
+    padding: 76px 150px;
+}
+
+.description-car{
 font-family: 'Quicksand';
 font-style: normal;
 font-weight: 500;
 font-size: 32px;
 line-height: 40px;
-color: #000000;
 margin-bottom: 15px;
+color: #000000;
 }
 
-p{
+.description{
+width: 360px;
 font-family: 'Quicksand';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 20px;
+
 color: #000000;
-width: 356px; 
 }
-
-.inform{
-    padding: 80px 150px;
-}
-
-.hero-section button{
-display: block;
-font-family: 'Quicksand';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 30px;
-color: #000000;
-background-color: #FFFFFF;
-border-radius: 12px;
-border: none;
-
-padding: 15px 30px;
-margin-left: 1035px;
-margin-top: 400px;
- }
 
 .last-photo{
-    display: block;
-    width: 70px;
-    height: 70px;
     position: absolute;
-    top: 40%;
-    left: 0;
+    top: 42%;
+    left: 15px;
+    background: none;
+    border: none;
 }
 
 .next-photo{
-    display: block;
-    width: 70px;
-    height: 70px;
-
     position: absolute;
+    top: 42%;
+    right: 15px;
+    background: none;
+    border: none;
+}
+
+.image{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+// Модалки
+
+// Модалка sign-up
+.backdrop-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    // &.is-hidden{
+    //     opacity: 0;
+    //     pointer-events: none;
+    // }
+}
+.form{
+    justify-content: center;
+    align-items: center;
+
+    width: 271px;
+    height: 246px;
+
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+.online{
+    top:50%;
+    left: 50%;
+    background-color: #ffffff;
+    background-size: cover;
+    border-radius: 12px;
+    position: absolute;
+    
+   transform: translate(-50%, -50%) scale(1);
+   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-book-online{
+    display: inline-block;
+    margin: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    line-height: 100%;
+    color: #ffffff;
+    padding-right: 10px;
+
+    // &::before{
+    //     content: "";
+    //     background-color: #000000;
+    //     width: 481px;
+    //     height: 1px;
+    //     bottom: 25%;
+    //     margin-left: 66px;
+    //     transform: translate(-50%, -50%);
+    // }
+}
+.fields{
+    padding: 20px;
+}
+.field{
+    color: #000000;
+    margin-bottom: 14px;
+    margin-left: 20px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.book-online{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 36px;
+
+    width: 271px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+
+    background: #000000;
+    border-radius: 12px 12px 0px 0px;
+}
+.label-text{
+    display: inline-block;
+    font-family: 'Quicksand';
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+.form-field{
+    width: 201px;
+    height: 25px;
+    left: 35px;
+    top: 77px;
+
+    background: #D9D9D9;
+    border-radius: 12px;
+}
+.online-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 6px 24px;
+
+    width: 81px;
+    height: 25px;
+
+    color: #000000;
+    border-radius: 12px;
+}
+.arrow-close-online{
+    width: 4px;
+    height: 4px;
+    left: 20.83px;
+    top: 231.66px;
+
+    border: 0.5px solid #000000;
+    transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+}
+.arrow-to-right-online-white{
+    width: 12px;
+    height: 6px;
+
+    border: 1px solid #FFFFFF;
+    transform: rotate(-90deg);
+
+}
+.close-text{
+    width: 81px;
+    height: 10px;
+    left: 28px;
+    top: 224px;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+
+    color: #000000;
+}
+
+
+
+
+// Приклад
+
+
+// .modal-button{
+//     position: relative;
+//     top: 29px;
+//     left: 433px;
+//     width: 24px;
+//     height: 24px;
+
+//     border: 0;
+//     border-radius: 50%;
+
+//     background-size: contain;
+// }
+// label{
+//     position: relative;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 20px;
+//     line-height: 30px;
+// }
+// .E-Mail{
+//     margin-top: 37px;
+// }
+// .Password{
+//     margin-top: 37px;
+// }
+// .fields,.field{
+//     display: flex;
+//     flex-direction: column;
+// }
+// .form-field{
+//     width: 434px;
+//     height: 49px;
+//     border-radius: 44px;
+//     border: 0;
+//     padding-left: 25px;
+// }
+// .sign-up-btn{
+//     color: #ffffff;
+//     background-color: #000000;
+//     border-radius: 32px;
+//     width: 163px;
+//     height: 56px;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 24px;
+//     line-height: 36px;
+//     margin-top: 64px;
+// }
+// .field-checkbox{
+//     display: inline-block;
+//     width: 15px;
+//     height: 15px;
+// }
+// .field-label{
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 10px;
+//     line-height: 15px;
+// }
+// .checkbox{
+//     display: flex;
+//     margin-top: 27px;
+// }
+// .account{
+//     display: flex;
+//     margin-top: 11px;
+//     margin-bottom: 23px;
+// }
+// .have-an-account,.account-log-in{
+//     margin: 0;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 10px;
+//     line-height: 1.5;
+// }
+// .account-log-in{
+//     color: #000000;
+//     text-decoration: underline;
+//     margin-left: 3px;
+// }
     top: 40%;
     right: 0;
 }
