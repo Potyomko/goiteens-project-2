@@ -10,16 +10,15 @@ firstRef.id = 'first-cloud'
 
 const secondRef = document.createElement("div")
 secondRef.id = 'second-cloud'
-// ====================================================================================
+// ======================================================================
 console.log(gameEl);
 gameEl.appendChild(dinosaurRef)
 dinosaurRef.after(cactussRef)
 cactussRef.after(firstRef)
 firstRef.after(secondRef)
-// ====================================================================================
-const dino = document.querySelector("#dino")
-const cactus = document.querySelector("#cactus")
-
+// ======================================================================
+const dino = document.getElementById("dino")
+const cactus = document.getElementById("cactus")
 const occasion = document.addEventListener("keydown", function (e) {
     jump()
 })
