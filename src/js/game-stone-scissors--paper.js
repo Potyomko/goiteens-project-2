@@ -8,7 +8,8 @@ listEl.insertAdjacentHTML('afterbegin', '<li class="item "><img class="img"src="
 listEl.insertAdjacentHTML('beforeend', '<li class="item "  ><img class="img"src="https://www.pngplay.com/wp-content/uploads/12/Scissor-PNG-HD-Quality.png" alt="ножниці" width="50" height="50"></li>')
 listEl.insertAdjacentHTML('beforeend', '  <li class="item"  ><img class="img"src="https://www.pngall.com/wp-content/uploads/10/Paper-PNG-Photo.png" width="50" height="50" alt="папір"></li>')
 
-const modalContainer = document.querySelector('.game-modal');
+const modalContainer = document.querySelector('[data-modal="1"]');
+console.log(modalContainer);
 const itemQuestionEl = document.querySelector('li')
 const textEl = document.querySelector('h1')
 const comp = document.querySelector('.comp')
@@ -34,8 +35,6 @@ function ulFuction(event) {
 
   // Отримуємо рандомну картинку 
 const randomImg = imagesList[Math.floor(Math.random() * imagesList.length)];
-
-console.log(randomImg);
 
 // // Задаємо рандомне значення li
 itemQuestionEl.src = randomImg.src
@@ -97,3 +96,4 @@ function changeStyles(message, winner, loser, ) {
 function increasePoints(pleer) {
 pleer.textContent = points += 1;
 }
+ 
