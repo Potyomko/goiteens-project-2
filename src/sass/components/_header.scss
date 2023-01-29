@@ -1,26 +1,19 @@
 .header-nav{
     background-color: $lightHeaderAndFooterColor;
     position: relative;
-
-
-//  padding-bottom: 26px;
-//  padding-top: 26px;
-
-
   }
+
 .header-container{
   display: flex;
   align-items: center;
 }
   .link-item{
     font-family: 'Quicksand';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 25px;
-/* identical to box height */
-
-color: $darkPrimeryTextColor;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: $darkPrimeryTextColor;
 
 
   }
@@ -31,10 +24,7 @@ font-style: normal;
 font-weight: 300;
 font-size: 20px;
 line-height: 25px;
-/* identical to box height */
-
 color: $darkPrimeryTextColor;
-
   }
 
   .head-list{
@@ -46,7 +36,8 @@ color: $darkPrimeryTextColor;
   }
 
   
-  .navigation{    margin-left: 273px;
+  .navigation{    
+    margin-left: 273px;
   }
 
 
@@ -61,10 +52,6 @@ line-height: 16px;
 border-radius: 12px ;
 width: 96px;
 height: 36px;
-// margin-left: 1078px;
-// margin-top: -32px;
-
-
 }
 
 .button-sing-up{
@@ -84,9 +71,6 @@ height: 36px;
   width: 1200px;
   display: flex;
   margin-left: 36px;
-
-
-  
 }
 
 .list-button button + button{
@@ -174,7 +158,7 @@ input:checked + .slider:before  {
 
 .logo{
   width: inherit;
-
+  fill: $darkPrimeryTextColor;
 
 }
 
