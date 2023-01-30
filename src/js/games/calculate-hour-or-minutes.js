@@ -1,26 +1,33 @@
 const modal = document.getElementById('8');
 
-const labelEl = document.createElement('label');
+const input = document.querySelector('.js-calculate');
 
 const inputEl = document.createElement('input');
+inputEl.classList.add('js-calculate');
 inputEl.type = 'text';
 
-labelEl.appendChild(inputEl)
-modal.appendChild(labelEl)
->>>>>>> main:src/js/games/calculate-hour-or-minutes.js
-const input = document.querySelector('.js-calculate');
-        console.log(input);
-        input.addEventListener('input', calculate);
+const btnEl = document.createElement('button');
+btnEl.type = 'button';
+btnEl.textContent = 'Ризкни'
 
-            function calculate (event) {
-                const numbers = Number(event.target.value);
-                const calculation = numbers / 60;
-                createTextInput(calculation);
+modal.appendChild(inputEl);
+modal.appendChild(btnEl);
+
+input.addEventListener('input', calculate);
+
+let calculation = 0;
+
+function calculate (event) {
+    const numbers = Number(event.currentTarget.value);
+    return calculation = numbers % 60;
 }
-function createTextInput(result) {
+
+btnEl.addEventListener('click', createTextInput);
+
+function createTextInput() {
     const textEl = document.createElement('p');
     textEl.classList.add('text-result');
-    // textEl.append
-    textEl.textContent = result;
+    modal.appendChild(textEl);
+    textEl.textContent = calculation;
 }
             
