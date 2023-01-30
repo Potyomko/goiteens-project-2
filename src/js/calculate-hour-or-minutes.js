@@ -1,10 +1,13 @@
+// const calculate_hour = document.querySelector(["data-module=8"]);
+
 // const labelEl = createElement('label');
+// labelEl.appendChild(inputEl)
+// labelEl.apend(calculate_hour);
 
 // const inputEl = createElement('input');
-// inputEL.classList.add('js-calculate');
+// inputEl.classList.add('js-calculate');
 // inputEl.type = 'text';
 
-// labelEl.appendChild(inputEl)
 
 const input = document.querySelector('.js-calculate');
         console.log(input);
@@ -18,6 +21,7 @@ const input = document.querySelector('.js-calculate');
 function createTextInput(result) {
     const textEl = document.createElement('p');
     textEl.classList.add('text-result');
+    // textEl.append
     textEl.textContent = result;
 }
             
