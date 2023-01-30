@@ -62,11 +62,8 @@
     },
 ]
 
-console.log(games.name);
-
 
 const createCards = function(games) {
-
     const cardEl = document.createElement('li');
     cardEl.classList = 'cards-list';
 
@@ -74,22 +71,10 @@ const createCards = function(games) {
     button.classList = 'cards-button';
     button.textContent = games.name;
 
-    const backdropEl = document.createElement('div')
-    backdropEl.classList = 'backdrop hidden game';
-
-    const modalEl = document.createElement('div')
-    backdropEl.classList = 'modal game';
-
-
-    backdropEl.append(modalEl)
-
-    cardEl.append(button, backdropEl);
+    cardEl.appendChild(button);
 
       return cardEl;
-
-  }
-
-  // console.log(createArticle(products[0]));
+}
 
   const elements = games.map(createCards)
 
@@ -97,4 +82,20 @@ const createCards = function(games) {
 
   containerEl.append(...elements);
 
-  console.log(containerEl);
+  // console.log(containerEl);
+
+  // Відкриття модалки
+   const backdropEl = document.querySelector('.backdrop')
+console.log(backdropEl);
+
+  containerEl.addEventListener('click', onModalOpen);
+
+  function onModalOpen(e) {
+    console.log(e.target);
+      if(e.target.nodeName !== "BUTTON"){
+        return;
+      }
+      console.log(backdropEl);
+      backdropEl.classList.remove('is-hidden')
+    
+  }
