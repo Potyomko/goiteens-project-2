@@ -1,7 +1,7 @@
 // Модалки
 
 // Модалка sign-up
-.backdrop-modal-offline{
+.backdrop-modal{
     z-index: 1;
     position: fixed;
     top: 0;
@@ -11,22 +11,22 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    &.hidden{
+    &.is-hidden{
         opacity: 0;
         pointer-events: none;
     }
 }
-.form-offline{
+.form{
     justify-content: center;
     align-items: center;
 
-    width: 325px;
+    width: 271px;
     height: 290px;
 
     background: #FFFFFF;
     border-radius: 12px;
 }
-.without-call{
+.online{
     top:50%;
     left: 50%;
     background-color: #ffffff;
@@ -37,7 +37,7 @@
    transform: translate(-50%, -50%) scale(1);
    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.text-book-without-call{
+.text-book-online{
     display: inline-block;
     margin: 0;
     font-family: 'Quicksand';
@@ -45,7 +45,7 @@
     font-size: 16px;
     line-height: 20px;
     line-height: 100%;
-    color: #000000;
+    color: #ffffff;
     padding-right: 10px;
 
     // &::before{
@@ -64,60 +64,63 @@
 .field{
     color: #000000;
     margin-bottom: 14px;
-    margin-left: 20px;
+    // margin-left: 20px;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
 }
-.book-without-call{
+.book-online{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px 36px;
 
-    width: 325px;
+    width: 271px;
     height: 40px;
     left: 0px;
     top: 0px;
 
-
-    border: 1px solid #000000;
+    background: #000000;
     border-radius: 12px 12px 0px 0px;
 }
 .label-text{
     display: inline-block;
-
     font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    width: 90px;
-    height: 15px;
+    margin-bottom: 10px;
 }
-.form-field-offline{
-    width: 254px;
+.form-field{
+    width: 201px;
     height: 25px;
-    left: 36px;
-    top: 77px;
+    // left: 35px;
+    // top: 77px;
 
     background: #D9D9D9;
-    border-radius: 12px;
     border: none;
+    border-radius: 12px;
 }
-.submit-without-call-btn{
+.online-btn{
     display: flex;
     padding: 6px 24px;
-    margin-right: 120px;
-    margin-left: 105px;
+    margin-right: 80px;
+    margin-left: 80px;
 
     color: #FFFFFF;
     background: #000000;
     border-radius: 12px;
 }
-.close-btn-offline{
+.arrow-to-right-online-white{
+    width: 12px;
+    height: 6px;
+
+    border: 1px solid #FFFFFF;
+    transform: rotate(-90deg);
+
+}
+.close-btn-online{
     width: 91px;
     height: 10px;
     left: 54px;
@@ -125,11 +128,6 @@
     margin-left: 45px;
     margin-top: 14px;
 }
-.arrow-to-right-without-call-white{
-    width: 12px;
-    height: 6px;
-
-    border: 1px solid #FFFFFF;
-    transform: rotate(-90deg);
-
+.black-modal{
+    background: #484848;
 }

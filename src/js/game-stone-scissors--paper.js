@@ -1,4 +1,5 @@
 
+
 const modalContainer= document.querySelector('#7')
 // створюємо li з картинками
 
@@ -20,27 +21,37 @@ modalContainer.innerHTML(`<section>
 </section>`)
 const itemQuestionEl = document.querySelector('.image')
 const TextEl = document.querySelector('.title"')
+
+
+
+const listEl = document.createElement('ul')
+listEl.classList.add('ul')
+// створюємо li з картинками
+console.log(listEl);
+listEl.insertAdjacentHTML('afterbegin', '<li class="item "><img class="img"src="https://www.pngall.com/wp-content/uploads/5/Stone-PNG-Photo.png" alt="камінь" width="50" height="50"></li>')
+listEl.insertAdjacentHTML('beforeend', '<li class="item "  ><img class="img"src="https://www.pngplay.com/wp-content/uploads/12/Scissor-PNG-HD-Quality.png" alt="ножниці" width="50" height="50"></li>')
+listEl.insertAdjacentHTML('beforeend', '  <li class="item"  ><img class="img"src="https://www.pngall.com/wp-content/uploads/10/Paper-PNG-Photo.png" width="50" height="50" alt="папір"></li>')
+
+const modalContainer = document.querySelector('[data-modal="1"]');
+console.log(modalContainer);
+const itemQuestionEl = document.querySelector('li')
+const textEl = document.querySelector('h1')
 const comp = document.querySelector('.comp')
 const users = document.querySelector('.user')
 const listEl = document.querySelector('.list')
 
 stone-scissors-paper
+
+
+modalContainer.appendChild(listEl)
+
+
 // Отримуємо масив всіх картинок
 const imagesList = document.querySelectorAll('.img')
 console.log(imagesList );
 // Початок лічильника
 
 let points = 0;
-
-
-
-
-
-
- 
-
-
-
 listEl.addEventListener('click', ulFuction)
 
 
@@ -52,8 +63,6 @@ function ulFuction(event) {
 
   // Отримуємо рандомну картинку 
 const randomImg = imagesList[Math.floor(Math.random() * imagesList.length)];
-
-console.log(randomImg);
 
 // // Задаємо рандомне значення li
 itemQuestionEl.src = randomImg.src
@@ -92,11 +101,11 @@ switch (combination) {
   case "камінь - камінь":
   case "ножниці - ножиці" :
   case "папір - папір" :
-    TextEl .textContent = 'Нічия!';
+    textEl.textContent = 'Нічия!';
     
     break
   default:
-    TextEl .textContent = 'Зробіть вибір!';
+    textEl.textContent = 'Зробіть вибір!';
 
     break;
 }
@@ -106,7 +115,11 @@ switch (combination) {
 
 // Виносимо окремі шматки коду в функції для чистоти коду
 function changeStyles(message, winner, loser, ) {
+
   TextEl.textContent = message;   
+
+  textEl.textContent = message;   
+
   loser.classList.add('color-lose');
   winner.classList.add('color-win');
   
@@ -115,3 +128,4 @@ function changeStyles(message, winner, loser, ) {
 function increasePoints(pleer) {
 pleer.textContent = points += 1;
 }
+ 
