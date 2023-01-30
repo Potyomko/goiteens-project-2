@@ -1,14 +1,13 @@
-// const calculate_hour = document.querySelector(["data-module=8"]);
+const modal = document.getElementById('8');
 
-// const labelEl = createElement('label');
-// labelEl.appendChild(inputEl)
-// labelEl.apend(calculate_hour);
+const labelEl = document.createElement('label');
 
-// const inputEl = createElement('input');
-// inputEl.classList.add('js-calculate');
-// inputEl.type = 'text';
+const inputEl = document.createElement('input');
+inputEl.type = 'text';
 
-
+labelEl.appendChild(inputEl)
+modal.appendChild(labelEl)
+>>>>>>> main:src/js/games/calculate-hour-or-minutes.js
 const input = document.querySelector('.js-calculate');
         console.log(input);
         input.addEventListener('input', calculate);
