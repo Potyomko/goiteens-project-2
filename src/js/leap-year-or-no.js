@@ -1,5 +1,6 @@
-const countainerRef = document.querySelector('[data-module="leap-year"]');
+const modal = document.querySelector('[data-modal="1"]')
 
+const countainerEl = document.createElement('div');
 const whatSouuldDo = document.createElement('p');
 const inputEl = document.createElement('input');
 const reviewEl = document.createElement('button');
@@ -8,15 +9,18 @@ const answerEl = document.createElement('p');
 let year = 0;
 
 inputEl.classList.add('leap-year');
-reviewEl.classList.add('leap-year-btn')
+reviewEl.classList.add('leap-year-btn');
 
+// countainerEl.id = '1';
 whatSouuldDo.textContent = 'Введіть рік';
 reviewEl.textContent = 'Перевірити';
 
-countainerRef.append(whatSouuldDo)
-countainerRef.append(inputEl);
-countainerRef.append(reviewEl)
-countainerRef.append(answerEl)
+countainerEl.append(whatSouuldDo)
+countainerEl.append(inputEl);
+countainerEl.append(reviewEl)
+countainerEl.append(answerEl)
+modal.append(countainerEl)
+
 
 inputEl.addEventListener('input',hendlerInputEvent )
 reviewEl.addEventListener('click', hendlerReviewYear);
