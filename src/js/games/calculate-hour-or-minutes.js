@@ -1,33 +1,33 @@
 const modal = document.getElementById('8');
 
-const doIt = document.createElement('p');
-doIt.classList.add('do-it');
-doIt.textContent = 'Введи кількість хвилин і не пожалієш, без смс і реєстрацій';
-modal.prepend(doIt);
+const containerEl = document.createElement('div');
+containerEl.classList.add('hour-container');
+modal.prepend(containerEl);
 
 const inputEl = document.createElement('input');
 inputEl.classList.add('js-calculate');
 inputEl.type = 'text';
+inputEl.placeholder = 'Введи кількість хвилин і не пожалієш, без смс і реєстрацій';
+containerEl.appendChild(inputEl);
 modal.appendChild(inputEl);
 
-const btnEl = document.createElement('button');
-btnEl.type = 'button';
-btnEl.textContent = 'Ризкни';
-modal.appendChild(btnEl);
+const enterEl = document.createElement('button');
+enterEl.type = 'button';
+enterEl.textContent = 'Ризкни';
+containerEl.appendChild(enterEl);
+modal.appendChild(enterEl);
 
 const input = document.querySelector('.js-calculate');
 input.addEventListener('input', calculate);
-
-
 
 let calculation = 0;
 
 function calculate (event) {
     const numbers = Number(event.currentTarget.value);
-    return calculation = numbers % 60;
+    return calculation = numbers / 60;
 }
 
-btnEl.addEventListener('click', createTextInput);
+enterEl.addEventListener('click', createTextInput);
 
 function createTextInput() {
     const textEl = document.createElement('p');
