@@ -1,19 +1,24 @@
 const modal = document.getElementById('8');
 
-const input = document.querySelector('.js-calculate');
+const doIt = document.createElement('p');
+doIt.classList.add('do-it');
+doIt.textContent = 'Введи кількість хвилин і не пожалієш, без смс і реєстрацій';
+modal.prepend(doIt);
 
 const inputEl = document.createElement('input');
 inputEl.classList.add('js-calculate');
 inputEl.type = 'text';
+modal.appendChild(inputEl);
 
 const btnEl = document.createElement('button');
 btnEl.type = 'button';
-btnEl.textContent = 'Ризкни'
-
-modal.appendChild(inputEl);
+btnEl.textContent = 'Ризкни';
 modal.appendChild(btnEl);
 
+const input = document.querySelector('.js-calculate');
 input.addEventListener('input', calculate);
+
+
 
 let calculation = 0;
 
