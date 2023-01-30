@@ -1,10 +1,12 @@
-const labelEl = createElement('label');
+const modal = document.getElementById('8');
 
-const inputEl = createElement('input');
+const labelEl = document.createElement('label');
+
+const inputEl = document.createElement('input');
 inputEl.type = 'text';
 
 labelEl.appendChild(inputEl)
-
+modal.appendChild(labelEl)
 const input = document.querySelector('.js-calculate');
         console.log(input);
         input.addEventListener('input', calculate);

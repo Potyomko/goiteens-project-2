@@ -1,4 +1,4 @@
-const modal = document.querySelector('[data-modal="1"]')
+const modal = document.getElementById('1');
 
 const countainerEl = document.createElement('div');
 const whatSouuldDo = document.createElement('p');
