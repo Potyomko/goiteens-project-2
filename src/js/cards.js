@@ -61,6 +61,8 @@ const games =  [
   },
 ]
 
+console.log(games.name);
+
 
 const createCards = function(games) {
   const cardEl = document.createElement('li');

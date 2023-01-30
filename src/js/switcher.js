@@ -2,7 +2,7 @@ const switcher = document.querySelector('.js-switch' )
 const headerEl = document.querySelector('.header-nav' )
 const buttonEl = document.querySelector('.button-log-in' )
 const modalOffline = document.querySelector('.form-offline')
-const modalOnline = document.querySelector('.form-online')
+const modalOnline = document.querySelector('.form')
 switcher.addEventListener('change', switcherChecked)
 
 
@@ -23,6 +23,6 @@ function switcherChecked () {
         buttonEl.classList.remove("black-header-button");
 
         modalOffline.classList.remove("black-modal");
-       modalOnline.classList.remove("black-modal");
+        modalOnline.classList.remove("black-modal");
     }
 }
