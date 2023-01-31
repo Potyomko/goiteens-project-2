@@ -1,5 +1,5 @@
 const modalCheckNumber = document.getElementById('3');
-// modalCheckNumber.classList.add('check-number-container');
+modalCheckNumber.classList.add('check-number-container');
 console.log(modalCheckNumber);
 
 const inputEl = document.createElement('input');
@@ -9,6 +9,7 @@ modalCheckNumber.append(inputEl, buttonEl);
 console.log(inputEl);
 inputEl.classList.add('type-1');
 buttonEl.classList.add('pressed-button');
+inputEl.placeholder = 'Введіть число';
 inputEl.addEventListener('input', gg);
 buttonEl.addEventListener('click', check);
 
