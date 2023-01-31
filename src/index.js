@@ -13,3 +13,4 @@ import './js/games/game-stone-scissors--paper';
 // import './js/dino';
 // import './js/leap-year-or-no';
 import './js/switcher';
+import './js/games/check-number';
