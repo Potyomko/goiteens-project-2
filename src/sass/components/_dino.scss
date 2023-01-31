@@ -1,82 +1,115 @@
-.game {
-    width: 600px;
-    height: 200px;
-    border-bottom: 1px solid #000;
-    margin: auto;
-}
+// .game {
+// .box-dino {
+//     width: 630px;
+//     height: 200px;
+//     margin: auto;
+//     background-color: #fff;
+// }
+// .play {
+//     width: 600px;
+//     height: 200px;
+//     border-bottom: 1px solid #000;
+//     margin: auto;
+//     background-color: #fff;
 
-#dino {
-    display: block;
-    background-repeat: no-repeat;
-    block-size: contain;
-    width: 44px;
-    height: 49px;
-    background-image: url(/src/images/pngegg.png);
-    background-size: 44px 49px;
-    position: relative;
-    top: 150px;
-    z-index: 10;
-}
+// }
 
-.jump {
-    animation: jump .3s linear;
-}
+// #dino {
+//     display: block;
+//     background-repeat: no-repeat;
+//     block-size: contain;
+//     width: 44px;
+//     height: 49px;
+//     background-image: url(/src/images/pngegg.png);
+//     background-size: 44px 49px;
+//     position: relative;
+//     top: 150px;
+//     z-index: 10;
+// }
 
-@keyframes jump {
-    0% {
-        top: 150px;
-    }
-    30% {
-        top: 130px;
-    }
-    50% {
-        top: 80px;
-    }
-    80% {
-        top: 130px;
-    }
-    100% {
-        top: 150px;
-    }
-}
+// .jump {
+//     animation: jump .3s linear;
+// }
 
-#cactus {
-    width: 40px;
-    height: 55px;
-    display: block;
-    background-image: url(/src/images/AnyConv.com__cac.svg);
-    background-size: 40px 55px;
-    position: relative;
-    top: 110px;
-    left: 580px;
-    animation: animation 1.5s infinite linear;
-}
+// @keyframes jump {
+//     0% {
+//         top: 150px;
+//     }
+//     30% {
+//         top: 130px;
+//     }
+//     50% {
+//         top: 80px;
+//     }
+//     80% {
+//         top: 130px;
+//     }
+//     100% {
+//         top: 150px;
+//     }
+// }
 
-@keyframes animation {
-    0% {
-        left: 580px;
-    }
-    100% {
-        left: -20px;
-    }
-}
+// #cactus {
+//     width: 40px;
+//     height: 55px;
+//     display: block;
+//     background-image: url(/src/images/AnyConv.com__cac.svg);
+//     background-image: url(/src/images/cactus.svg);
+//     background-size: 40px 55px;
+//     position: relative;
+//     top: 110px;
+//     left: 580px;
+//     animation: animation 1.5s infinite linear;
+// }
 
-#first-cloud {
-    width: 30px;
-    height: 40px;
-    background-image: url(/src/images/cloud.png);
-    background-size: 30px 40px;
-    position: relative;
-    bottom: 50px;
-    animation: animation 4s infinite linear;
-}
+// @keyframes animation {
+//     0% {
+//         left: 580px;
+//     }
+//     100% {
+//         left: -20px;
+//     }
+// }
 
-#second-cloud {
-    width: 35px;
-    height: 45px;
-    background-image: url(/src/images/cloud.png);
-    background-size: 35px 45px;
-    position: relative;
-    bottom: 16px;
-    animation: animation 3s infinite linear;
+// #first-cloud {
+//     width: 30px;
+//     height: 40px;
+//     background-image: url(/src/images/cloud.png);
+//     background-size: 30px 40px;
+//     position: relative;
+//     bottom: 50px;
+//     animation: animation 4s infinite linear;
+// }
+
+// #second-cloud {
+//     width: 35px;
+//     height: 45px;
+//     background-image: url(/src/images/cloud.png);
+//     background-size: 35px 45px;
+//     position: relative;
+//     bottom: 16px;
+//     animation: animation 3s infinite linear;
+// }
+
+
+.link-dino {
+    background-color: #252525;
+    font-size: 35px;
+    padding: 20px;
+    margin: 30px 450px;
+    color: #fff;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
+// #game-over {
+//     position: absolute;
+//     left: calc(50% - 135px);
+//     top: 80px;
+//     font-size: 45px;
+//     margin: auto;
+//     width: 350px;
+//     height: 80px;
+//     color: #525252;
+// }
