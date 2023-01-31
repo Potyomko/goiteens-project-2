@@ -1,7 +1,7 @@
 const games =  [
   {
     id: 1,
-    name: 'Високосний калькулятор',
+    name: 'Чи високосний рік',
     category: 'calculator',
   },
   {
@@ -11,7 +11,7 @@ const games =  [
   },
   {
     id: 3,
-    name: 'Високосний калькулятор',
+    name: 'Чи попадає число в діапазон',
     category: 'calculator',
   },
   {
@@ -31,27 +31,27 @@ const games =  [
   },
   {
     id: 7,
-    name: 'Високосний калькулятор',
+    name: 'Болонський калькулятор',
     category: 'calculator',
   },
   {
     id: 8,
-    name: 'Високосний калькулятор',
+    name: 'Вичислення години',
     category: 'calculator',
   },
   {
     id: 9,
-    name: 'Високосний калькулятор',
+    name: 'Камінь-Ножиці-Папір',
     category: 'calculator',
   },
   {
     id: 10,
-    name: 'Високосний калькулятор',
+    name: `М'ячик в полі`,
     category: 'calculator',
   },
   {
     id: 11,
-    name: 'Високосний калькулятор',
+    name: 'Хрестики-Нолики',
     category: 'calculator',
   },
   {
