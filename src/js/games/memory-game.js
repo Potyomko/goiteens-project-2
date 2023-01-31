@@ -1,7 +1,9 @@
-const modalContainer = document.querySelector('.game-modal');
+const modalContainer = document.getElementById('11');
 console.log(modalContainer);
+
 const appEl = document.createElement('div');
 appEl.classList.add('app');
+
 const arr = [
   { item: 0 },
   { item: 1 },
@@ -15,12 +17,13 @@ const arr = [
 ];
 
 const itemEl = arr.map(el => {
+  console.log(el);
   const itemEl = document.createElement('div');
   itemEl.classList.add('app_block');
-  itemEl.dataset.el.item;
+  itemEl.dataset = el.item;
 });
 
-appEl.appendChild(itemEl);
+appEl.append(itemEl);
 modalContainer.append(appEl);
 const items = document.getElementsByClassName('app_block');
 let movePlayer = true;
