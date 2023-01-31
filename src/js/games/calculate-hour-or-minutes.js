@@ -2,19 +2,21 @@ const modal = document.getElementById('8');
 
 const containerEl = document.createElement('div');
 containerEl.classList.add('hour-container');
-modal.prepend(containerEl);
+modal.append(containerEl);
 
 const inputEl = document.createElement('input');
 inputEl.classList.add('js-calculate');
+inputEl.classList.add('user-number');
 inputEl.type = 'text';
 inputEl.placeholder = 'Введи кількість хвилин і не пожалієш, без смс і реєстрацій';
-containerEl.appendChild(inputEl);
+containerEl.append(inputEl);
 modal.appendChild(inputEl);
 
 const enterEl = document.createElement('button');
+enterEl.classList.add('enter')
 enterEl.type = 'button';
 enterEl.textContent = 'Ризкни';
-containerEl.appendChild(enterEl);
+containerEl.append(enterEl);
 modal.appendChild(enterEl);
 
 const input = document.querySelector('.js-calculate');
@@ -32,7 +34,9 @@ enterEl.addEventListener('click', createTextInput);
 function createTextInput() {
     const textEl = document.createElement('p');
     textEl.classList.add('text-result');
+    containerEl.append(textEl);
     modal.appendChild(textEl);
     textEl.textContent = calculation;
+    textEl.textContent = '';
 }
             
