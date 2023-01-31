@@ -7,7 +7,7 @@ const ballEl = document.createElement('img');
 
 fieldEl.classList.add('field');
 ballEl.classList.add('ball');
-countainerEl.id = '10'
+// countainerEl.id = '10'
 
 ballEl.src = '///src/images/ball.png';
 ballEl.alt = 'Ball';
