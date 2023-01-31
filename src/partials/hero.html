@@ -1,94 +1,17 @@
-<section class="hero-section">
-
-    <!-- Online -->
-<div class="backdrop-modal is-hidden" data-modal>
-    <div class="online">
-        <!-- Form online -->
-        <form class="form js-speaker-form" autocomplete="on">
-            <div class="book-online">
-                <a href="" class="text-book-online">Book a test-drive online</a>
-                <svg class="arrow-to-right-online-white" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 13L7 7L1 1" stroke="white"/>
-                </svg>
-            </div>
-            <ul class="fields">
-                <li class="field name">
-                    <label class="label-text" for="name-surname">Name, Surname</label>
-                        <input 
-                            class="form-field"
-                            type="text"
-                            name="name-surname"
-                            id="name-surname" 
-                            placeholder="Enter your name">
-                </li>
-                <li class="field phone-number">
-                    <label class="label-text phone-number" for="phone-number">Phone Number</label>
-                        <input 
-                            class="form-field"
-                            type="phone-number"
-                            name="phone-number"
-                            id="phone-number"
-                            placeholder="Enter your phone number" >
-            </ul>
-                <button type="submit" class="online-btn">Submit</button> <!--Слухач подій -->
-            <div class="close">
-                <svg class="arrow-close-online" width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.12126 4.94975L0.999942 2.82843M0.999942 2.82843L3.12126 0.707113M0.999942 2.82843H6.6568" stroke="black" stroke-width="0.5"/>
-                </svg>
-                <p class="close-text" data-modal-close>Close current window</p>
-            </div>
-        </form>
-    </div>
-</div>
-
-
-<!-- without call
-<div class="backdrop is-hidden" data-modal>
-    <div class="without-call">
-        Form without call
-        <form class="form js-speaker-form" autocomplete="on">
-            <div class="book-without-call">
-                <a href="" class="text-book-without-call">Book a test-drive without a call</a>
-                <svg class="arrow-book-online" width="12" height="6">
-                    <use href="./images/arrow-book-online.svg" ></use>
-                </svg>   
-            </div>
-            <ul class="fields">
-                <li class="field name">
-                    <label class="label-text" for="name-surname">Name, Surname</label>
-                        <input 
-                            class="form-field"
-                            type="text"
-                            name="name-surname"
-                            id="name-surname" 
-                            placeholder="Enter your name">
-                </li>
-                <li class="field E-mail">
-                    <label class="label-text E-mail" for="E-mail">E-Mail</label>
-                        <input 
-                            class="form-field"
-                            type="E-mail"
-                            name="E-mail"
-                            id="E-Mail"
-                            placeholder="Enter your E-Mail" >
-            </ul>
-                <button type="submit" class="without-call-btn">Submit</button>
-            <div class="close-without-call">
-                
-                <p class="close-text-without-call" data-modal-close>Close current window</p>
-            </div>
-        </form>
-    </div>
-</div> -->
-
-
+<section class="hero-section section">
+  <div class="container">
     <div class="inform">
-        <svg class="last-photo" width="70" height="70" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M52.4975 2.99996L3.00005 52.4974L52.4975 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <svg class="next-photo" width="70" height="70" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.49747 2.99996L52.9949 52.4974L3.49747 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <h1>Honda Civic</h1>
-        <p>Honda Civic has advantages for interior space, 
-            driving dynamics, an upscale cabin, and 
-            more safety features.</p>
+      <h1 class="description-car">Honda Civic</h1>
+      <p class="description">Honda Civic has advantages for interior space, driving dynamics, an upscale cabin, and more safety features.</p>
     </div>
-    <button type="button">Book a test-drive</button>
-   </section>  
+    <button class="last-photo">
+    <svg width="70" height="70" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M52.4975 2.99996L3.00005 52.4974L52.4975 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="next-photo">
+    <svg width="70" height="70" viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.49747 2.99996L52.9949 52.4974L3.49747 101.995" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="test-drive" type="button">Book a test-drive</button>
+  </div>
+</section>
+<script src="./js/hero.js" type="module"></script>
+ 
