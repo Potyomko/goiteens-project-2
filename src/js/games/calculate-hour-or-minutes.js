@@ -1,8 +1,5 @@
 const modal = document.getElementById('8');
-
-const containerEl = document.createElement('div');
-containerEl.classList.add('hour-container');
-modal.append(containerEl);
+modal.classList.add('hour-container');
 
 const inputEl = document.createElement('input');
 inputEl.classList.add('js-calculate');
