@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 // const mod = document.getElementById('12')
 
 // const box = document.createElement('div')
@@ -76,12 +76,3 @@ linkDino.textContent = 'Dino game'
 
 modalDino.appendChild(linkDino)
 // buttonDino.appendChild(dinoImg)
-=======
-const mod = document.getElementById('12')
-
-const linkDino = document.createElement('a')
-linkDino.textContent = 'Dino game'
-linkDino.href = 'https://mukolasa.github.io/portfolio/'
-linkDino.classList.add('dino')
-mod.appendChild(linkDino)
->>>>>>> Stashed changes
