@@ -1,4 +1,4 @@
-const countainerRef = document.querySelector('.countainer');
+const countainerRef = document.getElementById('2');
 
 const act = document.createElement('p');
 const input = document.createElement('input');

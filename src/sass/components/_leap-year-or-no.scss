@@ -1,0 +1,40 @@
+.year-countainer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    // background-color: $darkHeaderAndFooterColor;
+}
+
+.verifi{
+    font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #fff;
+        border-radius: 12px;
+        border: none;
+}
+
+.year-field{
+    width: 300px;
+    height: 30px;
+
+    background: #D9D9D9;
+    border: none;
+    border-radius: 12px;
+}
+
+.answer{
+    font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+}

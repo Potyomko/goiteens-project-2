@@ -61,17 +61,18 @@ const games =  [
   },
 ]
 
+console.log(games.name);
+
 
 const createCards = function(games) {
   const cardEl = document.createElement('li');
   cardEl.classList = 'cards-list';
 
-  const button = document.createElement('button');
-  button.classList = 'cards-button';
-  button.textContent = games.name;
-  button.id = games.id;
+  const gameContainerEl = document.createElement('div');
+  gameContainerEl.classList.add('cards-container')
+  gameContainerEl.id = games.id;
 
-  cardEl.appendChild(button);
+  cardEl.appendChild(gameContainerEl);
 
     return cardEl;
 }
@@ -79,10 +80,10 @@ const createCards = function(games) {
 const elements = games.map(createCards)
 
 const containerEl = document.querySelector('.interactive-cards')
-
+console.log(containerEl);
 containerEl.append(...elements);
 
-// console.log(containerEl);
+
 
 // Відкриття модалки
  const backdropEl = document.querySelector('.backdrop')
